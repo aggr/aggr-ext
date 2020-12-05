@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Aggr toolbox",
   "background": {
-    "scripts": ["background.ts"]
+    "scripts": ["src/background.ts"]
   },
   "permissions": [
     "tabs"
