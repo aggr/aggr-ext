@@ -4,7 +4,7 @@ const username = "aymericbeaumet";
 // TODO: make this configurable
 const pinned = true;
 
-async function openPage() {
+async function browserAction() {
   const tabs = await browser.tabs.query({
     currentWindow: true,
     url: `https://aggr.md/@${username}/*`,
@@ -18,4 +18,12 @@ async function openPage() {
   return browser.tabs.create({ url: `https://aggr.md/@${username}/`, pinned });
 }
 
-browser.browserAction.onClicked.addListener(openPage);
+async function onCommand(commandName: string) {
+  switch (commandName) {
+    case "toggle-sidebar":
+      return browser.sidebarAction.toggle();
+  }
+}
+
+browser.browserAction.onClicked.addListener(browserAction);
+browser.commands.onCommand.addListener(onCommand);

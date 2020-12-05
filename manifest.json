@@ -29,6 +29,7 @@
     "show_matches": ["<all_urls>"]
   },
   "sidebar_action": {
+    "browser_style": true,
     "default_icon": {
       "16": "assets/icon-16.png",
       "32": "assets/icon-32.png"
@@ -39,5 +40,13 @@
   },
   "options_ui": {
     "page": "src/options.html"
+  },
+  "commands": {
+    "toggle-sidebar": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A"
+      },
+      "description": "Toggle the Aggr sidebar"
+    }
   }
 }
