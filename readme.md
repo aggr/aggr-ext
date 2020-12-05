@@ -12,5 +12,5 @@ _todo_
 
 ```
 yarn build:watch
-yarn run:watch
+yarn start:watch
 ```
