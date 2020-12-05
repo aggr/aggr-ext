@@ -6,6 +6,9 @@
   "background": {
     "scripts": ["background.ts"]
   },
+  "permissions": [
+    "tabs"
+  ],
   "browser_action": {
     "default_icon": {
       "64": "assets/icon-64.png",
