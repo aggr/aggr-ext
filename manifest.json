@@ -15,5 +15,15 @@
       "128": "assets/icon-128.png",
       "256": "assets/icon-256.png"
     }
+  },
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+      "19": "assets/icon-19.png",
+      "38": "assets/icon-38.png"
+    },
+    "default_title": "Subscribe with Aggr",
+    "default_popup": "src/page_action.html",
+    "show_matches": ["<all_urls>"]
   }
 }
