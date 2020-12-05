@@ -1,8 +1,22 @@
 {
   "name": "aggr-web-ext",
-  "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "repository": "git@github.com:aggr/aggr-web-ext.git",
   "author": "Aymeric Beaumet <hi@aymericbeaumet.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build manifest.json --experimental-scope-hoisting --no-source-maps",
+    "build:watch": "parcel watch manifest.json",
+    "start": "yarn start:watch --no-reload",
+    "start:watch": "cd dist && web-ext run",
+    "test": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "parcel-bundler": "1.12.4",
+    "parcel-plugin-web-extension": "1.6.1",
+    "typescript": "4.1.2",
+    "web-ext": "5.4.0",
+    "web-ext-types": "3.2.1",
+    "webextension-polyfill-ts": "0.22.0"
+  }
 }

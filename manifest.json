@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Aggr",
+  "version": "0.1.0",
+  "description": "Aggr toolbox",
+  "background": {
+    "scripts": ["background.ts"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "64": "assets/icon-64.png",
+      "128": "assets/icon-128.png",
+      "256": "assets/icon-256.png"
+    }
+  }
+}
