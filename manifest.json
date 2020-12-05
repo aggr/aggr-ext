@@ -25,5 +25,8 @@
     "default_title": "Subscribe with Aggr",
     "default_popup": "src/page_action.html",
     "show_matches": ["<all_urls>"]
+  },
+  "options_ui": {
+    "page": "src/options.html"
   }
 }
