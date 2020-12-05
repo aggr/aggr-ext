@@ -8,7 +8,7 @@
     "build": "parcel build manifest.json --experimental-scope-hoisting --no-source-maps",
     "build:watch": "parcel watch manifest.json",
     "start": "yarn start:watch --no-reload",
-    "start:watch": "cd dist && web-ext run",
+    "start:watch": "web-ext run --source-dir ./dist/",
     "test": "tsc --noEmit"
   },
   "devDependencies": {
