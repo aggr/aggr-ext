@@ -1,0 +1,8 @@
+{
+  "name": "aggr-ext",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aggr/aggr-ext.git",
+  "author": "Aymeric Beaumet <hi@aymericbeaumet.com>",
+  "license": "MIT"
+}
