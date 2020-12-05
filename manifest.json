@@ -1,8 +1,10 @@
 {
   "manifest_version": 2,
   "name": "Aggr",
+  "short_name": "Aggr",
   "version": "0.1.0",
   "description": "Aggr toolbox",
+  "homepage_url": "https://github.com/aggr/aggr-web-ext",
   "background": {
     "scripts": ["src/background.ts"]
   },
@@ -25,6 +27,15 @@
     "default_title": "Subscribe with Aggr",
     "default_popup": "src/page_action.html",
     "show_matches": ["<all_urls>"]
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png"
+    },
+    "default_title": "Aggr",
+    "default_panel": "src/sidebar.html",
+    "open_at_install": true
   },
   "options_ui": {
     "page": "src/options.html"
