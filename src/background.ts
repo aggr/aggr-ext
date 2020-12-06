@@ -22,7 +22,7 @@ enum ContextMenu {
 
 browser.contextMenus.create({
   id: ContextMenu.Subscribe,
-  title: "Subscribe with Aggr",
+  title: "Subscribe With Aggr",
   contexts: ["page"],
 });
 
