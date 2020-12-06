@@ -6,6 +6,8 @@
   document.write(text);
   document.close();
 
+  document.body.style.width = "500px";
+
   document.addEventListener(
     "click",
     function (event) {
