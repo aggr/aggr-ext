@@ -88,9 +88,10 @@ async function switchOrCreateTab(options: { url: string; pinned: boolean }) {
     url: options.url,
   });
   if (tabs[0]) {
-    return browser.tabs.update(tabs[0].id, {
+    const tab = tabs[0];
+    return browser.tabs.update(tab.id, {
       active: true,
-      pinned: options.pinned,
+      pinned: tab.pinned || options.pinned,
     });
   }
   return browser.tabs.create({
