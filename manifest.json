@@ -36,7 +36,7 @@
     },
     "default_title": "Aggr",
     "default_panel": "src/sidebar.html",
-    "open_at_install": true
+    "open_at_install": false
   },
   "options_ui": {
     "page": "src/options.html"
@@ -44,7 +44,7 @@
   "commands": {
     "toggle-sidebar": {
       "suggested_key": {
-        "default": "Ctrl+Shift+A"
+        "default": "Alt+Ctrl+A"
       },
       "description": "Toggle the Aggr sidebar"
     }
