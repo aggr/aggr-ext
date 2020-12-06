@@ -7,8 +7,8 @@
   "scripts": {
     "build": "parcel build manifest.json --experimental-scope-hoisting --no-source-maps",
     "build:watch": "parcel watch manifest.json",
-    "start": "yarn start:watch --no-reload",
-    "start:watch": "web-ext run --source-dir ./dist/",
+    "start": "yarn start:watch -- --no-reload",
+    "start:watch": "web-ext run -t firefox-desktop -t chromium",
     "test": "tsc --noEmit"
   },
   "devDependencies": {
@@ -16,7 +16,9 @@
     "parcel-plugin-web-extension": "1.6.1",
     "typescript": "4.1.2",
     "web-ext": "5.4.0",
-    "web-ext-types": "3.2.1",
     "webextension-polyfill-ts": "0.22.0"
+  },
+  "webExt": {
+    "sourceDir": "./dist/"
   }
 }

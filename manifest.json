@@ -9,24 +9,16 @@
     "scripts": ["src/background.ts"]
   },
   "permissions": [
+    "contextMenus",
     "tabs"
   ],
   "browser_action": {
-    "default_icon": {
-      "64": "assets/icon-64.png",
-      "128": "assets/icon-128.png",
-      "256": "assets/icon-256.png"
-    }
-  },
-  "page_action": {
     "browser_style": true,
     "default_icon": {
       "19": "assets/icon-19.png",
       "38": "assets/icon-38.png"
     },
-    "default_title": "Subscribe with Aggr",
-    "default_popup": "src/page_action.html",
-    "show_matches": ["<all_urls>"]
+    "default_title": "Aggr"
   },
   "sidebar_action": {
     "browser_style": true,
@@ -41,10 +33,13 @@
   "options_ui": {
     "page": "src/options.html"
   },
+  "icons": {
+    "16": "assets/icon-16.png"
+  },
   "commands": {
     "toggle-sidebar": {
       "suggested_key": {
-        "default": "Alt+Ctrl+A"
+        "default": "Alt+Shift+A"
       },
       "description": "Toggle the Aggr sidebar"
     }
