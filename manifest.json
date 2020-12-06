@@ -10,7 +10,8 @@
   },
   "permissions": [
     "contextMenus",
-    "tabs"
+    "tabs",
+    "https://aggr.md/*"
   ],
   "browser_action": {
     "browser_style": true,
@@ -18,7 +19,8 @@
       "19": "assets/icon-19.png",
       "38": "assets/icon-38.png"
     },
-    "default_title": "Aggr"
+    "default_title": "Aggr",
+    "default_popup": "src/popup.html"
   },
   "sidebar_action": {
     "browser_style": true,
